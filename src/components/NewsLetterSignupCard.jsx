@@ -20,7 +20,7 @@ const NewsLetterSignupCard = () => {
     return (
         <>
             {/* if submit is true --> ThanksForSubscribingCard if false --> NewsLetterSignupCard  */}
-            {submit ? (<ThanksForSubscribingCard setSubmit={setSubmit} setEmail={setEmail} />) :
+            {submit ? (<ThanksForSubscribingCard setSubmit={setSubmit} setEmail={setEmail} email={email} />) :
                 (
                     // card area 
                     <div className='bg-White md:rounded-2xl grid lg:grid-cols-2 lg:py-5 md:my-10 lg:my-0 pb-10 overflow-hidden' >
